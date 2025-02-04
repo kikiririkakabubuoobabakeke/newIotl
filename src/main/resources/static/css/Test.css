@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+background-color: rgb(224, 197, 194);
+}
+h1{
+	color: red;
+}
+
+#test {
+  background-color: #CCFFCC;
+  padding: 10px;
+}
+
+#ft1 {
+	 float: left;
+}
+
+#ft2 {
+	 float: right;
+}
+
+#ft3 {
+	 float: left;
+}
+
+#ft4 {
+	 float: right;
+}
+

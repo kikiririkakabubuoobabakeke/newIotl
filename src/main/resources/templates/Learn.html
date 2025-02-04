@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IotL</title>
+<link th:href="@{/css/Temp.css}" rel="stylesheet">
+</head>
+<body>
+	<h1>創って学ぶIoT</h1>
+	
+	<nav>
+	  <ul>
+	    <li><a href="Learn">学ぶ</a></li>
+	    <li><a href="Build">作る</a></li>
+	    <li><a href="Connect">接続</a></li>
+	    <li><a href="Setting">共有</a></li>
+	    <li><a href="Home">ホーム</a></li>
+	  </ul>
+	</nav>
+	<br1><br></br1>
+	<z>
+	「創って学ぶIoT」で利用されるBluetoothについて
+	</z>
+	<minibr><br></minibr>
+	<y>
+	当サイトでは主にBluetoothの通信方式の一つであるBluetooth Low Energy(BLE)を活用して学習を進めます。<br>
+	BLEは省電力であることが最大の特徴でありスマートフォンやPCから家電や車まで様々な機器に対応しています。<br>
+	また、BLEの特徴としてもう一つ仕様で決められたやり取りを行うという点があり、この特徴によりもう一つのBluetooth通信方式であるBluetooth Classicよりも入門に適しています。<br>
+	BLEでは、接続する機器に対してそれぞれPeripheralとCentralという役割が当てられますが、<br>
+	当サイトにはCentralとしての動作がすでに実装されており、ユーザーはマイコン等にPeripheral機器としてのコードを自ら実装を行います。<br>	
+	</y>
+	<br1><br></br1>
+	<z>
+	BLEについて
+	</z>
+	<minibr><br></minibr>
+	<y>
+	ここではまずBLEの動作について必要最低限の要素を文章で説明します。<br>
+	上記の文でも少し触れましたが、BLEではPeripheralとCentralという2つの役割が存在しており、Peripheralは子機、Centralは親機としての役割を持ちます。<br>
+	PeripheralはまずAdvertiseと呼ばれる広告を発信します。<br>
+	広告にはPeripheral機器の情報(ServiceIDやCharacteriscID、デバイス名など...)が含まれ、Central機器はscanで周辺の広告を拾い、接続したいPeripheral機器に対してconnect(接続)を行います。<br>
+	接続が行われた後は、PeripheralもしくはCentral機器が接続相手に対してWriteやRead等を行いデータのやり取りを行います。<br>
+	これら一連の動作を行うことでBLEは通信を行います。
+	</y>
+</body>
+</html>

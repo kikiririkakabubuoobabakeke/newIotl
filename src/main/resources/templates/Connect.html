@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IotL</title>
+<link th:href="@{/css/Temp.css}" rel="stylesheet">
+</head>
+<body>
+	<h1>創って学ぶIoT</h1>
+	
+	<nav>
+	  <ul>
+	    <li><a href="Learn">学ぶ</a></li>
+	    <li><a href="Build">作る</a></li>
+	    <li><a href="Connect">接続</a></li>
+	    <li><a href="Setting">共有</a></li>
+	    <li><a href="Home">ホーム</a></li>
+	  </ul>
+	</nav>
+	<br1><br></br1>
+	<y>
+		作成したBLEデバイスを検索します。<br>
+		<button type="button" id="scanBtn">BELデバイスの検索</button><br>
+		BLEデバイスに送信する文字列を入力します。<br>
+		入門１と入門３の場合はどのような文字列でも問題ありません。<br>
+		<body> <input type="text" id="textInput" placeholder="送信したい文字列を入力">
+		<button type="button" id="scanBtn2">送信</button>
+		
+		
+		<div id="text1"></div>
+	</y>
+</body>
+<script th:src="@{/js/Test2.js}"></script>
+</html>

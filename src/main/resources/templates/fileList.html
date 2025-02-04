@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ファイルリスト</title>
+</head>
+<body>
+    <h1>アップロードされたファイル</h1>
+    <ul>
+        <th:block th:each="file : ${files}">
+            <li>
+                <a th:href="@{'/files/' + ${file.id}}"
+                   th:text="${file.fileName}">ファイル名</a>
+            </li>
+        </th:block>
+    </ul>
+</body>
+</html>
