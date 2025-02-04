@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -Dmaven.test.skip=true
 
 FROM eclipse-temurin:21-alpine
-COPY --from=build /target/RestDepExercise-1-0.0.1-SNAPSHOT.jar demo.jar
+COPY --from=build /target/newiotl-1-0.0.1-SNAPSHOT.jar demo.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "demo.jar"]
